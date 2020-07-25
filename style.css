@@ -1,0 +1,74 @@
+*{box-sizing: border-box;}
+
+body {
+    font-family: sans-serif;
+    color: #454545;
+    padding: 100px;
+  }
+  
+  .ans{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+  }
+
+  .btn ,.quis{
+      width: 950px;
+      min-height:60px;
+      margin: 10px 0 0 10px;
+      padding:10px 20px;
+      background-color:white;
+      border:1px solid lightslategray;
+      font-size: large;
+      text-align: left;
+      box-shadow: 0 0 5px #ccc;
+  }
+
+  .green{
+    width: 950px;
+    min-height:60px;
+    margin: 10px 0 0 10px;
+    padding:10px 20px;
+    background-color:greenyellow;
+    border:1px solid lightslategray;
+    font-size: large;
+    text-align: left;
+    box-shadow: 0 0 5px #ccc;
+  }
+
+  .red{
+    width: 950px;
+    min-height:60px;
+    margin: 10px 0 0 10px;
+    padding:10px 20px;
+    background-color:red;
+    border:1px solid lightslategray;
+    font-size: large;
+    text-align: left;
+    box-shadow: 0 0 5px #ccc;
+    
+}
+
+#next{
+  width: 200px;
+  min-height:20px;
+  margin: 10px 0 0 70px;
+  padding:10px 10PX;
+  background-color:white;
+  border:1px solid lightslategray;
+  font-size: large;
+  text-align: left;
+  box-shadow: 0 0 5px #ccc;
+  text-align: center;
+  
+}
+
+#next {
+  clip-path: circle(75%);
+  transition: clip-path 1s;
+}
+
+#next:hover {
+  clip-path: circle(25%);
+}
