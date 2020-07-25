@@ -23,6 +23,7 @@ body {
       font-size: large;
       text-align: left;
       box-shadow: 0 0 5px #ccc;
+      border-radius: 05px;
   }
 
   .green{
