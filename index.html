@@ -20,7 +20,7 @@
         </div>    
     </div>
 
-    <div class = "ans">
+    <div id="ans" class = "">
        <ol>
        <li>  <button class="btn"  onclick="check(1);" id="1">For Artificial Inteligent </button>    </li>
        <li>  <button class="btn"  onclick="check(2);" id="2">For HTML </button>    </li>
@@ -28,8 +28,9 @@
        <li>  <button class="btn"   onclick="check(4);" id="4">For interactive the Web page   </button>    </li>
        </ol>
     
-    <button id="next" onclick="askQuiz();">Next</button>
+    
     </div>
-    </body>
+    <button id="next" onclick="askQuiz(this);">Next</button>    
+</body>
     <script src="app.js"></script>
 </html>

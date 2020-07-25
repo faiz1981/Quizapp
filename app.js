@@ -24,7 +24,7 @@ var a = 0;
 askQuiz();
 
 
-function askQuiz(){
+function askQuiz(e){
     document.getElementById("Quiz").innerHTML=Q[c].quiz;
     document.getElementById("1").innerHTML=Q[c].o1;
     document.getElementById("2").innerHTML=Q[c].o2;
@@ -37,12 +37,20 @@ function askQuiz(){
     document.getElementById("2").setAttribute("class","btn")
     document.getElementById("3").setAttribute("class","btn")
     document.getElementById("4").setAttribute("class","btn")
+    console.log(e);
+    toggle();
+    document.getElementById("next").style.display="none"; 
+  
   }
 
+function toggle(){
+  var tog = document.getElementById('ans');
+  tog.classList.toggle("animi");
+}
 
 
 function check(e){
-    
+  toggle(); 
  var ans =document.getElementById(e);
  var correct=document.getElementById(a);
    
@@ -51,12 +59,8 @@ function check(e){
       }
 
       correct.setAttribute('class','green');
-   
-//  document.getElementById('1').setAttribute("disabled","");
-//  document.getElementById('2').setAttribute("disabled","");
-//  document.getElementById('3').setAttribute("disabled","");
-//  document.getElementById('4').setAttribute("disabled","");
 
+  document.getElementById("next").style.display="block";    
  
 
 }

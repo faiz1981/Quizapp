@@ -1,3 +1,19 @@
+
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-25%);
+  }
+  100% {
+      transform: translateX(400);
+  }
+}
+
+
+
+
+
+
 *{box-sizing: border-box;}
 
 body {
@@ -12,10 +28,11 @@ body {
       justify-content: left;
       
   }
-
+.btn{
+  min-height:60px;
+}
   .btn ,.quis{
       width: 950px;
-      min-height:60px;
       margin: 10px 0 0 10px;
       padding:10px 20px;
       background-color:white;
@@ -72,4 +89,14 @@ body {
 
 #next:hover {
   clip-path: circle(25%);
+}
+
+.animi{
+  animation: 1s ease-in-out 0s 1 slideInFromLeft;
+  min-height:60px; 
+}
+
+.quis{
+  height:100px;
+
 }
